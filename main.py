@@ -9,14 +9,14 @@ def calculator():
     value_1 = input("Enter first number\n")
     try:
         value_1 = int(value_1)
-    except TypeError:
+    except ValueError:
         print("Incorrect format of value 1. Please enter an integer value\n")
         exit()
 
     value_2 = input("Enter second number\n")
     try:
         value_2 = int(value_2)
-    except TypeError:
+    except ValueError:
         print("Incorrect format of value 2. Please enter an integer value\n")
         exit()
 
